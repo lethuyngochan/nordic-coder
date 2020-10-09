@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact-info p:first-child {
+            font-size: 24px;
+        }
+        .question::before {
+            content: "+ ";
+        }
+        .contact-info p:nth-child(2),
+        .contact-info p:nth-child(3) {
+            color: grey;
+        }
+        .question {
+            border-style: none none solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-info">
+        <p>Let’s talk</p>
+        <p>Phone: 123.4567.8899</p>
+        <p>Fax: 123.4567.88991</p>
+        <a href="mailto:hello@nordiccoder.com">hello@nordiccoder.com</a>
+    </div>
+    <div class="contact-info">
+        <p>Visit our Store</p>
+        <p>Elizabeth Street 123</p>
+        <p>50050 Sydney</p>
+        <a href="#">See the map</a>
+    </div>
+    <div class="contact-info">
+        <p>Start your career</p>
+        <p>Commodo ad sint hashtag, voluptate consequat vero veniam.</p>
+        <a href="mailto:career@nordiccoder.com">career@nordiccoder.com</a>
+    </div>
+    <p style="font-size: 24px;">Please have a look at our frequently asked questions.</p>
+    <button type="button" class="question">Can I cancel my order?</button>
+    <button type="button" class="question">What payment methods do you accept?</button>
+    <button type="button" class="question">Is my payment information secure?</button>
+    <button type="button" class="question">When will I receive my refund?</button>
+</body>
+</html>
