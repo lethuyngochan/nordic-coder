@@ -63,10 +63,6 @@ a.black-btn {
     color: white;
 }
 
-.new-customer {
-    text-align: center;
-}
-
 .link-btn i {
     vertical-align: middle;
 }
@@ -133,6 +129,7 @@ body {
 .sort {
     border: 1px solid #E0E0E0;
     border-radius: 9px;
+    background-color: transparent;
 }
 
 .link-btn {
@@ -145,7 +142,7 @@ body {
 }
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -155,4 +152,101 @@ body {
 
 .column {
     width: 50%;
+    float: left;
+}
+
+.cookie {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 24.375em;
+    padding: 0.6em 1.875em 1.8em;
+}
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.thumbnail {
+    opacity: 0.5;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.color {
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 0.375em;
+    border: none;
+    padding: 0;
+}
+
+.color:hover {
+    opacity: 0.5;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: #EB5757;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+}
+
+.new-customer-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 50em;
+    margin: auto;
+}
+
+.new-customer {
+    text-align: center;
+    background: url(../img/new-customer.jpg) center;
+    padding: 5em 0;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.product {
+    width: 25%;
+    float: left;
+    padding: 0 0.625em;
+}
+
+.product img {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col {
+    float: left;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.products {
+    width: 75%;
 }
