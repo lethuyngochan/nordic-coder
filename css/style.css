@@ -122,16 +122,6 @@ body {
     font-size: 100%;
 }
 
-.thumbnail-active {
-    border: 2px solid;
-}
-
-.sort {
-    border: 1px solid #E0E0E0;
-    border-radius: 9px;
-    background-color: transparent;
-}
-
 .link-btn {
     border-style: none none solid;
 }
@@ -164,10 +154,8 @@ body {
 
 footer {
     background-color: #F2F2F2;
-}
-
-.thumbnail {
-    opacity: 0.5;
+    display: flex;
+    justify-content: space-around;
 }
 
 .thumbnail:hover {
@@ -279,6 +267,7 @@ footer {
     height: 15.625em;
     background: url(../img/darling.jpg);
     justify-content: center;
+    align-items: center;
 }
 
 .naturalism {
@@ -286,6 +275,7 @@ footer {
     height: 15.625em;
     background: url(../img/naturalism.jpg);
     justify-content: center;
+    align-items: flex-end;
 }
 
 .mystery {
@@ -300,6 +290,7 @@ footer {
     height: 15.625em;
     background: url(../img/reven.jpg);
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .collection {
@@ -312,4 +303,61 @@ footer {
 .top-nav {
     display: flex;
     justify-content: space-between;
+}
+
+.result-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-filter p {
+    margin: 0;
+}
+
+.sort {
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 0 1em;
+}
+
+.experience {
+    display: flex;
+}
+
+.experience-col2 {
+    display: flex;
+    align-items: center;
+}
+.product-detail {
+    display: flex;
+}
+.thumbnails {
+    width: 10%;
+}
+.main-product-img {
+    width: 50%;
+}
+.main-product-img img {
+    width: 100%;
+}
+.product-info {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.thumbnail {
+    opacity: 0.5;
+    width: 100%;
+}
+.thumbnail-active {
+    border: 2px solid;
+    width: 100%;
+}
+.product-content {
+    width: 100%;
+}
+.share {
+    width: 100%;
 }
