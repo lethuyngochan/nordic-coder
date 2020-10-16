@@ -197,6 +197,7 @@ footer {
 .banner {
     background-image: url(../img/banner.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .new-customer-content {
@@ -209,6 +210,7 @@ footer {
     text-align: center;
     background: url(../img/new-customer.jpg) center;
     padding: 5em 0;
+    background-size: cover;
 }
 
 .float-right {
@@ -249,4 +251,65 @@ footer {
 
 .products {
     width: 75%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div img {
+    width: 100%;
+}
+
+.insta-img {
+    width: 20%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    width: 30.33%;
+    margin: 10px;
+}
+
+.darling {
+    width: 11.25em;
+    height: 15.625em;
+    background: url(../img/darling.jpg);
+    justify-content: center;
+}
+
+.naturalism {
+    width: 31.875em;
+    height: 15.625em;
+    background: url(../img/naturalism.jpg);
+    justify-content: center;
+}
+
+.mystery {
+    width: 31.875em;
+    height: 15.625em;
+    background: url(../img/mystery.jpg);
+    justify-content: flex-end;
+}
+
+.reven {
+    width: 11.25em;
+    height: 15.625em;
+    background: url(../img/reven.jpg);
+    justify-content: flex-end;
+}
+
+.collection {
+    text-transform: uppercase;
+    background-size: cover;
+    color: white;
+    display: flex;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
 }
