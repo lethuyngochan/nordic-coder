@@ -262,44 +262,6 @@ footer {
     margin: 10px;
 }
 
-.darling {
-    width: 11.25em;
-    height: 15.625em;
-    background: url(../img/darling.jpg);
-    justify-content: center;
-    align-items: center;
-}
-
-.naturalism {
-    width: 31.875em;
-    height: 15.625em;
-    background: url(../img/naturalism.jpg);
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.mystery {
-    width: 31.875em;
-    height: 15.625em;
-    background: url(../img/mystery.jpg);
-    justify-content: flex-end;
-}
-
-.reven {
-    width: 11.25em;
-    height: 15.625em;
-    background: url(../img/reven.jpg);
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.collection {
-    text-transform: uppercase;
-    background-size: cover;
-    color: white;
-    display: flex;
-}
-
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -360,4 +322,89 @@ footer {
 }
 .share {
     width: 100%;
+}
+
+.collections {
+    display: flex;
+}
+.mystery {
+    flex-grow: 5;
+    height: 15.625em;
+    background: url(../img/mystery.jpg);
+    justify-content: flex-end;
+}
+.darling {
+    flex-grow: 2;
+    height: 15.625em;
+    background: url(../img/darling.jpg);
+    justify-content: center;
+    align-items: center;
+}
+.beyond {
+    flex-grow: 3;
+    height: 15.625em;
+    background: url(../img/beyond.jpg);
+    align-items: flex-end;
+}
+.collection-row2 {
+    display: flex;
+}
+.reven {
+    flex-basis: 20%;
+    height: 15.625em;
+    background: url(../img/reven.jpg);
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.naturalism {
+    flex-basis: 50%;
+    height: 15.625em;
+    background: url(../img/naturalism.jpg);
+    justify-content: center;
+    align-items: flex-end;
+}
+.feminin {
+    flex-basis: 30%;
+    height: 15.625em;
+    background: url(../img/feminin.jpg);
+    justify-content: flex-end;
+    align-items: center;
+}
+.collection {
+    text-transform: uppercase;
+    background-size: cover;
+    color: white;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .collections {
+        flex-direction: column;
+    }
+    .collection-row2 {
+        flex-direction: column;
+    }
+    .reven,
+    .feminin,
+    .naturalism {
+        flex-basis: auto;
+    }
+    .product-detail {
+        flex-wrap: wrap;
+    }
+    .thumbnails {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-product-img {
+        width: 100%;
+    }
+    .product-info {
+        width: 100%;
+    }
+    .thumbnail,
+    .thumbnail-active {
+        width: 100px;
+    }
 }
