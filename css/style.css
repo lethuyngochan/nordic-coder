@@ -136,10 +136,6 @@ body {
     margin: auto;
 }
 
-.top-nav a {
-    padding: 40px 15px;
-}
-
 .column {
     width: 50%;
     float: left;
@@ -216,12 +212,6 @@ footer {
     content: "";
     clear: both;
     display: table;
-}
-
-.product {
-    width: 25%;
-    float: left;
-    padding: 0 0.625em;
 }
 
 .product img {
@@ -399,12 +389,14 @@ footer {
 
 .product-container {
     position: relative;
+    overflow: hidden;
 }
 
 .add-to-cart {
     position: absolute;
     bottom: 1.25em;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 /* style cho nhung item li trong menu con */
@@ -431,12 +423,6 @@ cua no */
     position: relative;
 }
 
-/* lam cho nhung menu con co vi tri phu thuoc
-vao li chua no */
-li ul {
-    position: absolute;
-}
-
 /* chinh vi tri cua menu con 2 nam ben phai
 cua li chua no */
 .submenu2 {
@@ -444,6 +430,69 @@ cua li chua no */
     top: 0;
 }
 
+.main-menu > li > a {
+    display: inline-block;
+    padding: 40px 15px 15px;
+}
+
+/* lam cho nhung menu con co vi tri phu thuoc
+vao li chua no */
+li ul {
+    position: absolute;
+    display: none;
+}
+
+.main-menu li:hover > ul {
+    display: block;
+}
+
+.product-container img {
+    transition: transform 1s;
+}
+
+.product-container:hover img {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.product-container:hover .add-to-cart {
+    animation-name: slideup;
+    animation-duration: 0.5s;
+}
+
+@keyframes slideup {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 1.25em;
+        opacity: 1;
+    }
+}
+
+/* mobile va chung */
+.product {
+    width: 100%;
+    float: left;
+    padding: 0 0.625em;
+}
+
+/* tablet */
+@media screen and (min-width: 600px) {
+    .product {
+        width: 50%;
+    }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .product {
+        width: 25%;
+    }
+}
+
+/* mobile */
 @media (max-width: 600px) {
     .collections {
         flex-direction: column;
