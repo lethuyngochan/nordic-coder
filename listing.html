@@ -19,13 +19,20 @@
         <div class="col products">
             <div class="result-filter">
                 <p>Showing 1–12 of 24 results</p>
-                <button type="button" class="sort">Sort by latest <i class="fas fa-arrow-down"></i></button>
+                    <form>
+                        <select name="sort" class="sort">
+                            <option value="latest">Sort by latest</option>
+                            <option value="lowest">Sort by lowest price</option>
+                            <option value="highest">Sort by highest price</option>
+                        </select>
+                    </form>
             </div>
             <div class="flex-container flex-wrap">
                 <div>
                     <div class="product-container">
                         <img src="img/product1.jpg">
-                        <button type="button" class="add-to-cart">Add to cart <i class="fas fa-arrow-right"></i></button>
+                        <button type="button" class="add-to-cart">Add to cart <i
+                                class="fas fa-arrow-right"></i></button>
                     </div>
                     <p>Julia</p>
                     <p>$99.00 <span class="old-price">$119.00</span></p>

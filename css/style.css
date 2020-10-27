@@ -326,10 +326,6 @@ footer {
     width: 100%;
 }
 
-.collections {
-    display: flex;
-}
-
 .mystery {
     flex-grow: 5;
     height: 15.625em;
@@ -477,26 +473,23 @@ li ul {
     float: left;
     padding: 0 0.625em;
 }
-
 /* tablet */
 @media screen and (min-width: 600px) {
     .product {
         width: 50%;
     }
+    .collections {
+        display: flex;
+    }
 }
-
 /* desktop */
 @media (min-width: 992px) {
     .product {
         width: 25%;
     }
 }
-
 /* mobile */
 @media (max-width: 600px) {
-    .collections {
-        flex-direction: column;
-    }
 
     .collection-row2 {
         flex-direction: column;
