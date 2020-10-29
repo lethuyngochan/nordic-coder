@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
@@ -92,43 +92,47 @@
         </a>
     </div>
     <!-- End Banner -->
-    <p class="clearfix"><img src="img/new-look.jpg" alt="New look" class="float-left">Find your new look with the fresh
-        fall collection.</p>
+    <h1 class="clearfix"><img src="img/fall-fashion.jpg" alt="Fall fashion" class="float-left">
+        Find your new look with the fresh fall fashion ideas.</h1>
     <p><img src="img/highlight-desc.jpg" alt="Highlight description" class="float-right">Amazing designs &
         collaborations, and as always 100% Organic & Fairtrade certified cotton. Inspired by the
         georgious Brasilian bucket, a wonderful serenity has taken possession of my entire soul, like these sweet
         mornings of spring which.</p>
-    <h2 class="center large">Shop these collections</h2>
-    <div class="collections">
-        <div class="collection mystery">
-            <p>Mystery</p>
+    <section class="container">
+        <h2 class="center large">Shop these outfit collections</h2>
+        <div class="collections">
+            <div class="collection mystery">
+                <p>Mystery</p>
+            </div>
+            <div class="collection darling">
+                <p>Darling</p>
+            </div>
+            <div class="collection beyond">
+                <p>Beyond</p>
+            </div>
         </div>
-        <div class="collection darling">
-            <p>Darling</p>
+        <div class="collection-row2">
+            <div class="collection reven">
+                <p>Reven</p>
+            </div>
+            <div class="collection feminin">
+                <p>Le Feminin</p>
+            </div>
+            <div class="collection naturalism">
+                <p>Naturalism</p>
+            </div>
         </div>
-        <div class="collection beyond">
-            <p>Beyond</p>
-        </div>
-    </div>
-    <div class="collection-row2">
-        <div class="collection reven">
-            <p>Reven</p>
-        </div>
-        <div class="collection feminin">
-            <p>Le Feminin</p>
-        </div>
-        <div class="collection naturalism">
-            <p>Naturalism</p>
-        </div>
-    </div>
+    </section>
     <section class="new-customer">
         <div class="new-customer-content">
             <h2 class="center large">New customer?</h2>
             <p>Receive instantly voucher valued at</p>
             <p>50$</p>
             <p>and other attractive deals and latest trends</p>
-            <a href="#" class="black-btn">Register</a>
-            <button class="black-btn">Register</button>
+            <form>
+                <input type="email" name="email" placeholder="Email address" required><br>
+                <input type="submit" value="Register" class="black-btn">
+            </form>
         </div>
     </section>
     <h2 class="center large">Follow us on instagram</h2>
